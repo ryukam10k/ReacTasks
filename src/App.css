@@ -41,3 +41,12 @@ ul {
 li {
   padding: 5px;
 }
+
+.task {
+  cursor: pointer;
+}
+
+.task .text.done {
+  color: #ddd;
+  text-decoration: line-through;
+}

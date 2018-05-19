@@ -19,14 +19,14 @@ function InputArea(props) {
           content: 'Add',
           onClick: () => {
             // 新タスク
-            const task = {
+            const newTask = {
               done: false,
               text: props.inputText,
             };
 
             // タスクリストに新タスクを追加
-            const tasks = [...props.tasks, task];
-            props.updateTasks(tasks);
+            const newTasks = [...props.tasks, newTask];
+            props.updateTasks(newTasks);
 
             // 入力エリアを空にする
             props.updateInputText('');
