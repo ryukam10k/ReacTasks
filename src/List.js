@@ -1,11 +1,16 @@
 import * as React from 'react';
 
-function List() {
+function List(props) {
   return (
     <React.Fragment>
       <ul>
-        <li>task1</li>
-        <li>task2</li>
+        {props.tasks.map((task, i) => {
+          return (
+            <li>
+              <span>{task.text}</span>
+            </li>
+          );
+        })}
       </ul>
     </React.Fragment>
   );
