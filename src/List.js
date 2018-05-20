@@ -38,6 +38,17 @@ function List(props) {
                     {task.text}
                   </span>
                 </span>
+                <span
+                  className="remove"
+                  onClick={() => {
+                    const deledTasks = props.tasks.filter((task, index) => {
+                      return i !== index;
+                    });
+                    props.updateTasks(deledTasks);
+                  }}
+                >
+                  ×
+                </span>
               </li>
             );
           })}

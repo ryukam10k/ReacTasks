@@ -54,6 +54,20 @@ li {
   text-decoration: line-through;
 }
 
+.remove {
+  margin-left: 20px;
+  color: #cb0f13;
+  cursor: pointer;
+}
+
+.remove:hover {
+  opacity: 0.6;
+}
+
+.no-message {
+  padding: 20px 40px;
+}
+
 /************* semantic-override *************/
 .ui.checkbox {
   top: 2px;
